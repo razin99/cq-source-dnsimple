@@ -21,3 +21,5 @@ cq-source-dnsimple
 
 dist
 *.log
+
+.env
