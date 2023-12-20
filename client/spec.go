@@ -1,5 +1,7 @@
 package client
 
 type Spec struct {
-	// plugin spec goes here
+	Token     string `json:"token"`
+	BaseURL   string `json:"base_url,omitempty"`
+	UserAgent string `json:"user_agent,omitempty"`
 }
