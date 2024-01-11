@@ -17,11 +17,14 @@ The following source configuration file will sync to a PostgreSQL database. See 
 ```yaml
 kind: source
 spec:
-  name: "dnsimple"
-  path: "razin99/dnsimple"
+  name: dnsimple
+  registry: github
+  path: razin99/dnsimple
   version: "${VERSION}"
+  tables:
+    - dnsimple_domains
   destinations:
-    - "postgresql"
+    - postgresql
   spec:
     token: "${DNSIMPLE_TOKEN}"
 ```
